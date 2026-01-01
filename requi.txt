@@ -1,0 +1,10 @@
+torch
+datasets
+transformers
+tqdm
+accelerate
+zstandard
+sentencepiece
+regex
+safetensors
+psutil
