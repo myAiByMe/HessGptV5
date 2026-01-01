@@ -80,11 +80,11 @@ DATASETS_SEQUENCE = [
     },
     {
         'name': 'wikipedia',
-        'source': 'wikipedia',
-        'config': '20220301.en',
+        'source': 'wikimedia/wikipedia',      # ✅ CORRIGÉ
+        'config': '20231101.en',              # ✅ CORRIGÉ (était 20220301.en)
         'split': 'train',
         'text_key': 'text',
-        'streaming': False,
+        'streaming': True,                    # ✅ CORRIGÉ (était False)
         'description': '📚 Encyclopedia',
         'tokens': 1_000_000_000,
     },
@@ -104,14 +104,14 @@ DATASETS_SEQUENCE = [
         'config': None,
         'split': 'train',
         'text_key': 'text',
-        'streaming': False,
-        'description': '🌍 Reddit content',
+        'streaming': True,                    # ✅ CORRIGÉ (était False)
+        'description': '🌐 Reddit content',
         'tokens': 1_000_000_000,
     },
     {
         'name': 'pile_books',
         'source': 'monology/pile-uncopyrighted',
-        'config': 'all',
+        'config': 'default',                  # ✅ CORRIGÉ (était 'all')
         'split': 'train',
         'text_key': 'text',
         'streaming': True,
@@ -689,3 +689,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
