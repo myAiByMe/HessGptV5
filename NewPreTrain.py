@@ -35,7 +35,7 @@ CONFIG = {
     'embed_dim': 1280,
     'num_heads': 20,
     'num_layers': 20,
-    'max_seq_len': 1024,
+    'max_seq_len': 512,
     'dropout': 0.1,
     
     'batch_size': 32,
@@ -689,4 +689,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
