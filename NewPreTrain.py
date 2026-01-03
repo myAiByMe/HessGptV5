@@ -39,7 +39,7 @@ CONFIG = {
     'dropout': 0.1,
     
     'batch_size': 32,
-    'num_epochs_per_dataset': 2,
+    'num_epochs_per_dataset': 1,
     'learning_rate': 3e-4,
     'warmup_steps': 2000,
     'gradient_accumulation': 4,
